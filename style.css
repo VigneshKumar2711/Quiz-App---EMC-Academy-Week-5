@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blue;
+}
+
+.welcome-screen, .quiz-container, .result-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+}
+h1{
+    color:orangered;
+}
+h2{
+    text-align: center;
+    color:rgb(170, 41, 170);
+}
+
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding:5px;
+    margin: 10px 0;
+    background-color: ghostwhite;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.quiz-container .question {
+    margin-bottom: 20px;
+}
+
+.quiz-container input[type="radio"] {
+    margin-right: 10px;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.incorrect {
+    background-color: red;
+    color: white;
+}
+
+#timer {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+/* Footer Styling */
+footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .welcome-screen, .quiz-container, .result-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    #timer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-screen, .quiz-container, .result-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"], input[type="email"], button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #timer {
+        font-size: 12px;
+    }
+}
